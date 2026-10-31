@@ -19,7 +19,7 @@ export const ProductsList: React.FC<ProductListProps> = ({ searchQuery }) => {
         setLoading(true);
         setError(null);
 
-        const response = await axios.get<Product[]>('http://localhost:3000/api/products', {
+        const response = await axios.get<Product[]>('https://yondo.onrender.com/api/products', {
           timeout: 5000 
         });
 
